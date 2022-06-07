@@ -67,6 +67,10 @@ img {
 
 /* Header */
 
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -133,13 +137,13 @@ img {
   color: var(--text-color);
 }
 
-.header-mail {
-  margin-right: 50px;
-}
-
 .header-contact {
   display: flex;
   margin-left: auto;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header-mail:hover,
@@ -156,31 +160,12 @@ img {
   color: var(--akcent-color);
 }
 
-.container.main-nav {
-  border-top-width: 0px;
-  border-top-style: solid;
-  border-top-color: transparent;
-  border-right-width: 0px;
-  border-right-style: solid;
-  border-right-color: transparent;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(236, 236, 236, 1);
-  border-left-width: 0px;
-  border-left-style: solid;
-  border-left-color: transparent;
-}
-
 /* Main-Студия */
 
 .decision {
+  padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
-}
-
-.container.title {
-  padding-top: 200px;
-  padding-bottom: 210px;
 }
 
 .decision-title {
@@ -270,6 +255,10 @@ img {
   color: var(--title-color);
 }
 
+.about.section {
+  padding-top: 0;
+}
+
 .about-title {
   margin-bottom: 50px;
 }
@@ -305,6 +294,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-bkg);
 }
 
 .team-item:not(:last-child) {
@@ -312,7 +302,8 @@ img {
 }
 
 .team-border {
-  padding: 30px 60px 30px 59px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-subtitle {
@@ -340,9 +331,11 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-list {
+.footer-address {
   margin-top: 20px;
+}
 
+.footer-list {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -453,18 +446,10 @@ img {
 }
 
 .pictures-border {
-  border-top-width: 0px;
-  border-top-style: solid;
-  border-top-color: transparent;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: rgba(238, 238, 238, 1);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(238, 238, 238, 1);
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: rgba(238, 238, 238, 1);
+  border-top: 0px solid transparent;
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
 
   padding: 20px 24px;
 }
